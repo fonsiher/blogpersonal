@@ -1,4 +1,4 @@
-# Blog Personal como estilo de Hoja de Vida.
+# Blog Personal (Hoja de Vida) Con NodeJs y Handlebars.
 Hoja de Vida con información personal, de trabajos, experiencias laborales y un portafolio establecido, realizada con NodeJS, Handlebars, y Bootstrap. 
 
 ### Pre-requisitos 📋
@@ -8,6 +8,7 @@ Para la realización y prueba del código mostrado en el repositorio se utilizó
   <li>Visual Studio Code</li>
   <li>Node JS  v14.16.0.</li>
   <li>NPM (Node Package Manager)</li>
+  <li>Heroku</li>
 </ul>
 Si desea editar, modificar y ejecutar el código del repositorio necesitará disponer de las herramientas listadas. <br/>
 
@@ -49,39 +50,32 @@ Si ya lo tienes instaldo pasa al siguiente punto.</p>
 <ol>
   <li>Teniendo instalado NPM  a la persona que quiera trabajar con el código traído desde un repositorio o de manera remota se descargará el código sin las librerías y dependencias del proyecto, pero las instalará de forma sencilla mediante el comando de terminal «npm install»  que instalará todas las dependencias registradas en el archivo package.json</li>
  </ol>
-  <h5> El programa utiliza la librería npm yargs, que permite que el programa pueda ejecutarse en la terminal al estilo de llamados por línea de comandos de bash </h5>
-  <h5> El programa utiliza la librería npm axios, que permite extraer datos desde una API externa </h5>
-  <h5>El programa dispone un parámetro a ingresar: </h5
-  <ul>
-      <li>--ciudad -c: Nombre de la ciudad de la cual se desea obtener el clima</li>
-  </ul> 
-
-  <h3> El comando para la ejecución del programa se vería de la siguiente manera: </h3> 
-  
-  <ul>
-    <li> Tomando ejemplo datos de la ciudad de DOHA en Qatar </li>
-  </ul>
-  
+  <h5> El programa utiliza la librería npm express, que será el servidor que renderizará y ejecutará las páginas que deben cargar. </h5>
+  <h5> El programa utiliza la librería npm hbs, que permite trabajar con la tecnología de handlebars </h5>
+  <h5> El programa utiliza la librería npm nodemailer, que permite tomar datos de un formulario y enviarlo a un correo electrónico. </h5>
+  <h5>Para mirar la ejecución del programa se lo puede visualizar en un hosting subido en Heroku mediante el siguiente enlace: </h5>
 ```
-node app.js -c "Doha" 
+https://blog-ehernandez.herokuapp.com/
 ```
-
+ <h5>Puedes analizar el repositorio en github: </h5>    
+```
+https://github.com/fonsiher/blogpersonal/
+```  
   
 ## Construido con 🛠️
 
   <h5> Librerías NPM </h5>
 
-* [yargs](https://www.npmjs.com/package/yargs) - Ayuda a crear herramientas de línea de comandos interactivas, analizando argumentos y generando una elegante interfaz de usuario.
-* [colors](https://www.npmjs.com/package/colors) - Dar color y estilo la impresiones por consola node.js
-* [axios](https://www.npmjs.com/package/axios) - Cliente HTTP para navegadores y node.js basado en promesas.
-
+* [express](https://www.npmjs.com/package/express) - Proporciona herramientas pequeñas y sólidas para servidores HTTP, lo que la convierte en una gran solución para aplicaciones de una sola página, sitios web, híbridos o API HTTP públicas.
+* [hbs](https://www.npmjs.com/package/hbs) - Es un motor de visualización predeterminado requiere solo una línea de código en la configuración de la aplicación. Esto renderizará .hbsarchivos cuando res.renderse llame.
+* [heroku](https://www.npmjs.com/package/heroku) - Función para administrar las aplicaciones de Heroku desde la línea de comandos.
+* [nodemailer](https://www.npmjs.com/package/nodemailer) - Permite enviar correos electrónicos desde Node.js.
 
 
 ## Autor ✒️
 
 * **Edwin Hernández** - *Estudiante Ingeniería en Ciencias de la Computación* - [fonsiher](https://github.com/fonsiher)
 
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
 
 ## Licencia 📄
 
